@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    overflow: hidden;
+    
+}
+
+.car, .car1, .car2{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 100%;
+    left: 760px;
+}
+
+
+.caminhao{
+    width: 200px;
+    height: 600px;
+    position: absolute;
+    top: 100%;
+    left: 560px;
+}
+
+.caminhaoF{
+    left: calc(50% - 74px);
+    position: absolute;
+    border-bottom: 198px solid #c1c1c1;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 148px;
+    top:-4px;
+}
+
+
+.caminhaoT{
+    width: 180px;
+    height: 400px;
+    background-color: #3a1cbe;
+    position: absolute;
+    top: calc(100% - 400px);
+    left: calc(50% - 90px);
+    border-radius: 14px 14px 0px 0px;
+}
+
+
+.cabine{
+    height: 120px;
+    width: 170px;
+    background-color: #c1c1c1;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 85px);
+    top: 74px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+
+#carro1{
+    background-color: rgb(45, 99, 45);
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+#carro2{
+    background-color: #73743d;
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    background-color: #ab226d;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.logo .maiorq{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+
+.logo .maiorq::after,
+.logo .maiorq::before{
+    content: "";
+    width: 30px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logo .maiorq::before{
+    width: 8px;
+    height: 30px;
+    left: initial;
+    right: 0;
+}
+.logo .underline{
+    width: 25px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+
+.carro {
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    background-color: #ab226d;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+
+.roda{
+    width: 15px;
+    height: 40px;
+    background-color: #7c7c7c;
+    position: absolute;
+    z-index: -2;
+}
+
+
+.farolDL{
+    position: absolute;
+    filter: blur(1px); 
+    border-top: 8px solid yellow;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 8px;
+    z-index:-1;
+    top: 2%;
+    left: calc(50% - 32px);
+    box-shadow:  0px -24px 25px 10px yellow;
+}
+
+.farolDR{
+    position: absolute;
+    filter: blur(1px);
+    border-top: 8px solid yellow;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 8px;
+    z-index:-1;
+    top: 2%;
+    left: calc(50% + 12px);
+    box-shadow:  0px -24px 25px 10px yellow;
+}
+
+.farolTL{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 91%;
+    left: 25%;
+    border-radius: 50%;
+    box-shadow:  0px 12px 25px 5px red ;
+}
+
+.farolTR{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 91%;
+    left: 65%;
+    border-radius: 50%;
+    box-shadow:  0px 12px 25px 5px red;
+}
+
+
+
+
+
+.farolCDL{
+    position: absolute;
+    filter: blur(1px); 
+    border-top: 10px solid yellow;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 10px;
+    z-index:-1;
+    top: 2%;
+    left: calc(50% - 32px);
+    box-shadow:  0px -24px 35px 25px yellow;
+}
+
+.farolCDR{
+    position: absolute;
+    filter: blur(1px);
+    border-top: 8px solid yellow;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    width: 8px;
+    z-index:-1;
+    top: 2%;
+    left: calc(50% + 12px);
+    box-shadow:  0px -24px 35px 25px yellow;
+}
+
+.farolCTL{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 99%;
+    left: 25%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 35px 5px red ;
+}
+
+.farolCTR{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 99%;
+    left: 72%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 35px 5px red;
+}
+
+
+
+
+
+.farolM1R{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 45%;
+    left: 92%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 50px 12px red;
+}
+.farolM2R{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 86%;
+    left: 92%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 50px 12px red;
+}
+.farolM1L{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 45%;
+    left: 4%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 50px 12px red;
+}
+.farolM2L{
+    position: absolute;
+    background-color: red;
+    filter: blur(1px);
+    height: 8px;
+    width: 8px;
+    z-index: -1;
+    top: 86%;
+    left: 4%;
+    border-radius: 50%;
+    box-shadow:  0px 2px 50px 12px red;
+}
+
+
+
+#roda1{
+    left: 0%;
+    top: 0%;
+}
+
+#roda2{
+    left: calc(100% - 15px);
+    top: 0%;
+}
+
+#roda3{
+    left: 0%;
+    top: calc(100% - 40px);
+}
+
+#roda4{
+    left: calc(100% - 15px);
+    top: calc(100% - 40px);
+}
+
+.calcada{
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    background-color: #fff;
+}
+
+#calcadaD{
+    left: 1200px;
+}
+
+#calcadaE{
+    left: 700px;
+}
+
+.linha{
+    width: 6px;
+    height: 60px;
+    background-color: #d2d428;
+    position: absolute;
+    z-index: -2;
+}
+
+#linha1{
+    top: calc(100% - 60px);
+    left: 950px;
+}
+
+#linha2{
+    top: calc(83% - 60px);
+    left: 950px;
+}
+
+#linha3{
+    top: calc(63% - 60px);
+    left: 950px;
+}
+
+#linha4{
+    top: calc(43% - 60px);
+    left: 950px;
+}
+
+#linha5{
+    top: calc(23% - 60px);
+    left: 950px;
+}
+
+#linha6{
+    top: calc(3% - 60px);
+    left: 950px;
+}
+
+#linha7{
+    top: calc(-23% - 60px);
+    left: 950px;
+}
+
+#linha8{
+    top: calc(-33% - 60px);
+    left: 950px;
+}
+
+#linha9{
+    top: calc(-43% - 60px);
+    left: 950px;
+}
+
+#linha10{
+    top: calc(-53% - 60px);
+    left: 950px;
+}
+
+#linha11{
+    top: calc(-63% - 60px);
+    left: 950px;
+}
+
+#linha12{
+    top: calc(-73% - 60px);
+    left: 950px;
+}

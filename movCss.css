@@ -1,0 +1,359 @@
+
+
+#farolT{
+    transition-duration: 600ms;
+    animation: piscaFarolT linear infinite 6s;
+}
+
+@keyframes piscaFarolT {
+    9%{
+        box-shadow:  0px 20px 35px 5px red ;
+    }
+    10%{
+        box-shadow:  0px 20px 35px 22px red ;
+    }
+
+    16%{
+        box-shadow:  0px 20px 35px 22px red ;
+    }
+    17%{
+        box-shadow:  0px 20px 35px 5px red ;
+    }
+
+    21%{
+        box-shadow:  0px 20px 35px 5px red ;
+    }
+    22%{
+        box-shadow:  0px 20px 35px 22px red ;
+    }
+
+    33%{
+        box-shadow:  0px 20px 35px 22px red ;
+    }
+
+    34%{
+        box-shadow:  0px 20px 35px 5px red ;
+    }
+}
+
+
+
+
+
+#car{
+    transition-duration: 600ms;
+    animation: movCar linear infinite 6s;
+}
+
+
+
+@keyframes movCar {
+    12%{
+        rotate: 6deg;
+    }
+    13%{
+        rotate: 10deg;
+    }
+    14%{
+        left: 980px;
+    }
+    15%{
+        rotate: 0deg;
+    }
+    17%{
+        rotate:-5deg;
+    }
+    19%{
+        rotate:-10deg;
+    }
+    22%{
+        rotate: 0deg;
+        left:840px;
+    }
+    27%{
+        top: 400px;
+    }
+    28%{
+        top: 402px;
+    }
+    29%{
+        top: 404px;
+    }
+    30%{
+        top: 407px;
+    }
+    31%{
+        top: 409px;
+    }
+    32%{
+        top: 411px;
+        rotate: 2deg;
+    }
+    33%{
+        top: 414px;
+        left:840px;
+        rotate: 8deg;
+    }
+    34%{
+        top: 417px;
+        left:850px;
+        rotate: 9deg;
+    }
+    35%{
+        top: 421px;
+        left:882px;
+        rotate: 8deg;
+    }
+    36%{
+        top: 426px;
+        left:935px;
+        rotate: 2deg;
+    }
+    37%{
+        left:950px;
+        rotate: 0deg;
+    }
+    38%{
+        left:955px;
+    }
+    39%{
+        left:960px;
+    }
+    45%{
+        left:978px;
+    }
+    100%{
+        top: -100%;
+    }
+}
+
+
+
+
+#car1{
+    transition-duration: 600ms;
+    animation: movCar1 linear infinite 6s;
+}
+
+
+@keyframes movCar1 {
+    0%{
+        top:600px;
+    }
+
+    100%{
+        top:1800px;
+    }
+}
+
+
+
+
+#car2{
+    transition-duration: 600ms;
+    animation: movCar2 linear infinite 6s;
+}
+
+
+@keyframes movCar2 {
+    0%{
+        left: 1000px;
+        top:150px;
+    }
+
+    100%{   
+        left: 1000px;
+        top:1800px;
+    }
+}
+
+
+#caminhao{
+    transition-duration: 600ms;
+    animation: movCaminhao linear infinite 6s;
+}
+
+
+@keyframes movCaminhao {
+    0%{
+        left: 760px;
+        top:-3000px;
+    }
+    43%{
+        top: calc(350px - 270px);
+    }
+
+    100%{   
+        left: 720px;
+        top:1000px;
+    }
+}
+
+#farolCT{
+    box-shadow:  0px 2px 35px 25px red ;
+    transition-duration: 600ms;
+    animation: farolCaminhaoT linear infinite 6s;
+}
+
+
+@keyframes farolCaminhaoT {
+    43%{
+        box-shadow:  0px 2px 35px 25px red ;
+    }
+    44%{
+        box-shadow:  0px 2px 35px 5px red;
+    }
+    100%{
+        box-shadow:  0px 2px 35px 5px red ;
+    }
+
+}
+
+
+
+
+#linha1{
+    transition-duration: 600ms;
+    animation: movLi1 linear infinite 1.5s;
+}
+
+
+@keyframes movLi1 {
+    100%{
+        top: 200%;
+    }
+}
+
+#linha2{
+    transition-duration: 600ms;
+    animation: movLi2 linear infinite 1.5s;
+}
+
+
+@keyframes movLi2 {
+    100%{
+        top: 180%;
+    }
+}
+
+#linha3{
+    transition-duration: 600ms;
+    animation: movLi3 linear infinite 1.5s;
+}
+
+
+@keyframes movLi3 {
+    100%{
+        top:160%;
+    }
+}
+
+#linha4{
+    transition-duration: 600ms;
+    animation: movLi4 linear infinite 1.5s;
+}
+
+
+@keyframes movLi4 {
+    100%{
+        top: 140%;
+    }
+}
+
+#linha5{
+    transition-duration: 600ms;
+    animation: movLi5 linear infinite 1.5s;
+}
+
+
+@keyframes movLi5 {
+    100%{
+        top: 120%;
+    }
+}
+
+#linha6{
+    transition-duration: 600ms;
+    animation: movLi6 linear infinite 1.5s;
+}
+
+
+@keyframes movLi6 {
+    100%{
+        top: 100%;
+    }
+}
+
+#linha7{
+    transition-duration: 600ms;
+    animation: movLi7 linear infinite 1.5s;
+}
+
+
+@keyframes movLi7 {
+    100%{
+        top: 80%;
+    }
+}
+
+
+#linha8{
+    transition-duration: 600ms;
+    animation: movLi8 linear infinite 1.5s;
+}
+
+
+@keyframes movLi8 {
+    100%{
+        top: 60%;
+    }
+}
+
+#linha9{
+    transition-duration: 600ms;
+    animation: movLi9 linear infinite 1.5s;
+}
+
+
+@keyframes movLi9 {
+    100%{
+        top: 40%;
+    }
+}
+
+#linha10{
+    transition-duration: 600ms;
+    animation: movLi10 linear infinite 1.5s;
+}
+
+
+@keyframes movLi10 {
+    100%{
+        top: 20%;
+    }
+}
+
+#linha11{
+    transition-duration: 600ms;
+    animation: movLi11 linear infinite 1.5s;
+}
+
+
+@keyframes movLi11 {
+    100%{
+        top: 0%;
+    }
+}
+
+#linha12{
+    transition-duration: 600ms;
+    animation: movLi12 linear infinite 1.5s;
+}
+
+
+@keyframes movLi12 {
+    
+    100%{
+        top: -20%;
+    }
+}
